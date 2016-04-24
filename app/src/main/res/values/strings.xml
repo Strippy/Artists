@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Artists</string>
+    <string name="SortByABC">Sort by ABC</string>
+    <string name="SortByID">Sort by ID</string>
+    <string name="ClearCache">Clear cache</string>
+    <string name="link">site:  </string>
+    <string name="GetMore">Get more </string>
+    <string name="Biography">Biography</string>
+    <string name="JSON"> "http://cache-default05f.cdn.yandex.net/download.cdn.yandex.net/mobilization-2016/artists.json" </string>
+</resources>
