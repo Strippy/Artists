@@ -12,7 +12,6 @@ import java.util.List;
  * Created by Ilya on 23.04.2016.
  */
 //класс работы с кешем: сохранение и загрузка картинок, последних загруженных артистов
-//TODO сделать асинхронно.
 public class FileCache {
 
     private File cacheDir;
@@ -33,7 +32,7 @@ public class FileCache {
         File f = new File(cacheDir, filename);
         return f;
     }
-
+//кеширование изображения
     public void CacheBitmap(Bitmap bmp, String url){
         try {
             ByteArrayOutputStream stream = new ByteArrayOutputStream();
@@ -50,7 +49,7 @@ public class FileCache {
             exc.printStackTrace();
         }
     }
-
+//Кеширование данных артиста
     public void CacheArtist(Artist artist) {
         try {
             String fileName = "artist:"+artist.getId();
